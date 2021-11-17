@@ -12,12 +12,14 @@
   <section class="container">
     <h1>Ironhack Characters API</h1>
     <div class="characters-container">
+        {{#each characters}}
       <div class="character-info">
-        <div class="name">Character Name</div>
-        <div class="occupation">Character Occupation</div>
-        <div class="cartoon">Is a Cartoon?</div>
-        <div class="weapon">Character Weapon</div>
+        <div class="name">Character Name: {{name}}</div>
+        <div class="occupation">Character Occupation: {{occupation}}</div>
+        <div class="cartoon">Is a Cartoon? {{cartoon}}</div>
+        <div class="weapon">Character Weapon: {{ weapon }}</div>
       </div>
+      {{/each}}
     </div>
     <section class="operations">
       <div class="operation">
